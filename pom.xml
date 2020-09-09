@@ -84,6 +84,12 @@
             <artifactId>druid</artifactId>
             <version>1.1.12</version>
         </dependency>
+        <!-- screw核心 -->
+        <dependency>
+            <groupId>cn.smallbun.screw</groupId>
+            <artifactId>screw-core</artifactId>
+            <version>1.0.3</version>
+        </dependency>
         <!--Swagger-UI API文档生产工具-->
         <dependency>
             <groupId>io.springfox</groupId>
