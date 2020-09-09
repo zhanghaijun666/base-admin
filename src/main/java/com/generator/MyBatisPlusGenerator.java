@@ -99,7 +99,7 @@ public class MyBatisPlusGenerator {
   /** 初始化策略配置 */
   private static StrategyConfig initStrategyConfig(String[] tableNames) {
     StrategyConfig strategyConfig = new StrategyConfig();
-    strategyConfig.setNaming(NamingStrategy.underline_to_camel);
+    strategyConfig.setNaming(NamingStrategy.underline_to_camel); // 下划线到驼峰的命名方式
     strategyConfig.setColumnNaming(NamingStrategy.underline_to_camel);
     strategyConfig.setEntityLombokModel(true);
     strategyConfig.setRestControllerStyle(true);
