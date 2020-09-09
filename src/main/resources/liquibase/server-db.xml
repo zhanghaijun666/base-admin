@@ -21,7 +21,7 @@
 
 
     <changeSet id="createTable-db-user" author="haijun.zhang">
-        <createTable tableName="user" remarks="Create user for db">
+        <createTable tableName="user" remarks="用户表">
             <column name="id" type="int" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false" primaryKeyName="pk_user"/>
             </column>

@@ -1,6 +1,5 @@
 package com.generator;
 
-import cn.hutool.core.util.StrUtil;
 import cn.hutool.setting.dialect.Props;
 import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
@@ -12,6 +11,7 @@ import com.baomidou.mybatisplus.generator.config.po.TableInfo;
 import com.baomidou.mybatisplus.generator.config.rules.DateType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import com.baomidou.mybatisplus.generator.engine.VelocityTemplateEngine;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,7 +40,7 @@ public class MyBatisPlusGenerator {
     System.out.println(("请输入" + tip + "："));
     if (scanner.hasNext()) {
       String next = scanner.next();
-      if (StrUtil.isNotEmpty(next)) {
+      if (StringUtils.isNotBlank(next)) {
         return next;
       }
     }
